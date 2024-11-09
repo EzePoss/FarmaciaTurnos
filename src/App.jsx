@@ -275,7 +275,7 @@ const App = () => {
           <div className="rounded-3xl bg-amber-50/80 backdrop-blur-sm p-3 text-center text-amber-800 border border-amber-200 shadow-sm animate-fade-in mb-6">
             <div className="flex items-center justify-center gap-2">
               <Info className="h-4 w-4" />
-              <span className="text-sm font-medium">Las guardias son exclusivas para urgencias médicas</span>
+              <span className="text-sm font-medium">A partir de las 1 AM SOLO URGENCIAS MÉDICAS.</span>
             </div>
           </div>
 
