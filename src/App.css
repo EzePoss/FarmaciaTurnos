@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap');
+
+/* Animaciones */
+@keyframes pulse-subtle {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* Clases de animación */
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out;
+}
+
+/* Estilos del título principal */
+h1.bg-gradient-to-r {
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilos de la farmacia */
+.pharmacy-name {
+  position: relative;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.glow-effect {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center,
+      rgba(0, 230, 118, 0.2) 0%,
+      rgba(0, 230, 118, 0) 70%);
+  filter: blur(20px);
+  z-index: -1;
+  animation: glow 3s infinite;
+}
+
+/* Estilos del InfoWindow del mapa */
+.custom-info-window {
+  padding: 16px;
+  max-width: 300px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.custom-info-window h3 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #064e3b;
+  margin: 0 0 8px 0;
+}
+
+.custom-info-window .address {
+  color: #374151;
+  font-size: 14px;
+  margin: 0 0 8px 0;
+}
+
+.custom-info-window .rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.custom-info-window .stars {
+  color: #fbbf24;
+  font-size: 16px;
+}
+
+.custom-info-window .rating-text {
+  color: #4b5563;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+  border-radius: 0.75rem;
+}
+
+.gm-style-iw {
+  padding: 0 !important;
+  border-radius: 12px !important;
+}
+
+.gm-style-iw-d {
+  overflow: hidden !important;
+  max-height: none !important;
+}
+
+.gm-style-iw button {
+  display: none !important;
+}
+
+.distance-info {
+  transition: all 0.3s ease;
+  animation: fade-in 0.5s ease-out;
+}
